@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Words</title>
+    <link rel="stylesheet" href="styleer.css">
+</head>
+<body>
+    
+    <div class="menu">
+        <h3>Menu</h3>        
+        <button class="butMenu" id="listbut">Список слов</button>
+        <button class="butMenu" id="New">Новые Слова</button>
+        <button class="butMenu" id="leanBut">Учить</button>
+        <button class="butMenu" id="clear">Clear</button>
+    </div>
+<div class="common">        
+        <div class="control">
+            <div class="scores">
+                <div class="display" id="total"></div>
+                <div class="display" id="good"></div>        
+                <div class="display" id="bad"></div>        
+            </div>
+            <div class="panel">
+                <form action="" name="inWord">
+                    <input type="text" name="Eng" placeholder="Введите английское слово">
+                    <input type="text" name="EngComent" placeholder="Введите коментарий на английском">
+                    <input type="text" name="Trans" placeholder="Введите перевод">
+                    <input type="text" name="TransComent" placeholder="Введите коментарий к переводу">
+                </form>
+                <div class="buttons">
+                    <button id="add">Ввод</button>
+                    <button id="prev">Предыдущее</button>
+                    <button id="next">Следующее</button>
+                    <button id="delete">Удалить</button>
+                </div>            
+            </div>
+            <div class="scores">
+                <div class="display" id="round"></div>
+                <div class="display" id="curent"></div>
+                <div class="display" id="dispNewWord"></div>
+            </div>
+            
+        </div>
+        
+        <div class="cards">
+            <div class="place word">
+               <div class="card " id="Eng">English</div> 
+               <div class="card " id="Trans">Translate</div>
+            </div>
+            <div class="place coments">
+                <div class="card" id="EngComents">English Coments</div>    
+                <div class="card" id="TransComents">Translate Coments</div>
+            </div>        
+        </div>
+        
+        <div class="buttons">
+            <button id="mode">Выбрать режим</button>
+            <button id="EngToTr">English to Translate</button>
+            <button id="TrToEng">Translate to English</button>
+            <button id="NoProp">Неправильно</button>
+        </div>     
+</div>  
+
+<div class="conteiner Using">
+    <div class="head">
+        <table>
+            <tr>
+                <td data-content="EngWord">English</td>
+                <td data-content="TransWord">Translate</td>
+                <td data-content="PropCount">prop</td>
+                <td data-content="TotalCount">total</td>
+            </tr>
+        </table>
+    </div>
+    <div class="wordList">
+        <table></table>      
+    </div>
+</div>
+<div class="conteiner NewWord">
+    <div class="head2" >
+        <table>
+            <tr>
+                <td data-content="EngWord">English</td>
+                <td data-content="TransWord">Translate</td>                
+            </tr>
+        </table>
+    </div>
+    <div class="wordList2">
+        <table></table>      
+    </div>
+</div>
+
+    
+
+   
+
+
+<script src="Eng.js"></script>
+
+
+    
+</body>
+</html>
